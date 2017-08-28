@@ -23,6 +23,9 @@ public final class NetworkClient {
     // NOTE: this token should be set by authentication but is set manually here.
     private var bearerToken = "Bearer 599c4261-103d-4e9a-b5c4-06558c7fcbe9"
     
+    // NOTE: I'm setting the id.
+    private var currentUserId: String = "da0b7585-e3c2-42bc-887d-6e11dd209630"
+    
     // MARK: - Instance Properties
     internal let baseURL: URL
     internal let session = URLSession.shared
@@ -45,9 +48,10 @@ public final class NetworkClient {
         let url = baseURL.appendingPathComponent(target.route)
         
         var urlRequest = URLRequest(url: url)
-        urlRequest.setValue(bearerToken, forHTTPHeaderField: "Authoriztion")
+        urlRequest.setValue(bearerToken, forHTTPHeaderField: "Authorization")
+        print(urlRequest.value(forHTTPHeaderField: "Authorization") ?? "Not set")
         
-        let task = session.dataTask(with: url, completionHandler: { (data, response, error) in
+        let task = session.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
             
             guard let httpResponse = response as? HTTPURLResponse,
                 httpResponse.statusCode.isSuccessHTTPCode,
@@ -55,16 +59,21 @@ public final class NetworkClient {
                 let jsonObject = try? JSONSerialization.jsonObject(with: data),
                 let json = jsonObject as? [String: Any?] else {
                     if let error = error {
-                        completion(.failure(error))
+                        DispatchQueue.main.async {
+                            completion(.failure(error))
+                        }
                     } else {
-                        let error = NSError(domain: "Some error", code: 00, userInfo: nil)
-                        completion(.failure(error))
+                        let error = NSError(domain: response?.url?.absoluteString ?? "", code: (response as! HTTPURLResponse).statusCode, userInfo: ["response": response!])
+                        DispatchQueue.main.async {
+                            completion(.failure(error))
+                        }
+                        
                     }
                     return
             }
-            
-            completion(.success(json))
-            
+            DispatchQueue.main.async {
+                completion(.success(json))
+            }
         })
         
         task.resume()

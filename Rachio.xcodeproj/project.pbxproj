@@ -17,6 +17,7 @@
 		4BB36C781F54B81F005B26C6 /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB36C771F54B81F005B26C6 /* NetworkingClient.swift */; };
 		4BB36C821F54BDD4005B26C6 /* Int+HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB36C811F54BDD4005B26C6 /* Int+HTTPStatusCode.swift */; };
 		4BB36C851F54BFB7005B26C6 /* ServerEnvironments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BB36C841F54BFB7005B26C6 /* ServerEnvironments.plist */; };
+		4BB36C871F54CFAD005B26C6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB36C861F54CFAD005B26C6 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		4BB36C771F54B81F005B26C6 /* NetworkingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
 		4BB36C811F54BDD4005B26C6 /* Int+HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+HTTPStatusCode.swift"; sourceTree = "<group>"; };
 		4BB36C841F54BFB7005B26C6 /* ServerEnvironments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ServerEnvironments.plist; sourceTree = "<group>"; };
+		4BB36C861F54CFAD005B26C6 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			children = (
 				4BB36C771F54B81F005B26C6 /* NetworkingClient.swift */,
 				4BB36C831F54BDF7005B26C6 /* Extension */,
+				4BB36C861F54CFAD005B26C6 /* Coordinator.swift */,
 			);
 			name = Networking;
 			path = ..;
@@ -299,6 +302,7 @@
 			files = (
 				4BB36C821F54BDD4005B26C6 /* Int+HTTPStatusCode.swift in Sources */,
 				4B88D7521F54B52500573BF1 /* ViewController.swift in Sources */,
+				4BB36C871F54CFAD005B26C6 /* Coordinator.swift in Sources */,
 				4B88D7501F54B52500573BF1 /* AppDelegate.swift in Sources */,
 				4BB36C781F54B81F005B26C6 /* NetworkingClient.swift in Sources */,
 			);

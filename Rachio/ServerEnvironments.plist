@@ -3,11 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>service_url</key>
-	<string>https://api.rach.io/1
-  public var isSuccessHTTPCode: Bool {
-    return 200 &lt;= self &amp;&amp; self &lt; 300
-  }
-}
-</string>
+	<string>https://api.rach.io/1</string>
 </dict>
 </plist>

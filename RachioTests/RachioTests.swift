@@ -33,4 +33,61 @@ class RachioTests: XCTestCase {
         }
     }
     
+    func testNetworkingCall() {
+        let thisExpectation = expectation(description: "Example")
+        
+        enum Object: TargetType {
+            case test
+            
+            var route: String {
+                switch self {
+                case .test:
+                    return "/public/person/info"
+                }
+            }
+        }
+        
+        let network = NetworkClient.shared
+        network.request(target: Object.test) {result in
+            switch result {
+            case .success(let response):
+                print(response)
+                thisExpectation.fulfill()
+            case .failure(let error):
+                XCTFail(error.localizedDescription)
+            }
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+        
+    }
+    
+    func testUserInfo() {
+        let thisExpectation = expectation(description: "Example")
+        
+        enum Object: TargetType {
+            case test
+            
+            var route: String {
+                switch self {
+                case .test:
+                    return "/public/person/info"
+                }
+            }
+        }
+        
+        let network = NetworkClient.shared
+        network.request(target: Object.test) {result in
+            switch result {
+            case .success(let response):
+                print(response)
+                thisExpectation.fulfill()
+            case .failure(let error):
+                XCTFail(error.localizedDescription)
+            }
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
 }
