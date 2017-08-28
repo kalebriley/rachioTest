@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B88D7501F54B52500573BF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B88D74F1F54B52500573BF1 /* AppDelegate.swift */; };
+		4B88D7521F54B52500573BF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B88D7511F54B52500573BF1 /* ViewController.swift */; };
+		4B88D7551F54B52500573BF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B88D7531F54B52500573BF1 /* Main.storyboard */; };
+		4B88D7571F54B52500573BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B88D7561F54B52500573BF1 /* Assets.xcassets */; };
+		4B88D75A1F54B52500573BF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B88D7581F54B52500573BF1 /* LaunchScreen.storyboard */; };
+		4B88D7651F54B52500573BF1 /* RachioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B88D7641F54B52500573BF1 /* RachioTests.swift */; };
+		4B88D7701F54B52500573BF1 /* RachioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B88D76F1F54B52500573BF1 /* RachioUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B88D7611F54B52500573BF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B88D7441F54B52500573BF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B88D74B1F54B52500573BF1;
+			remoteInfo = Rachio;
+		};
+		4B88D76C1F54B52500573BF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B88D7441F54B52500573BF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B88D74B1F54B52500573BF1;
+			remoteInfo = Rachio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B88D74C1F54B52500573BF1 /* Rachio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rachio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B88D74F1F54B52500573BF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B88D7511F54B52500573BF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B88D7541F54B52500573BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B88D7561F54B52500573BF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B88D7591F54B52500573BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B88D75B1F54B52500573BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B88D7601F54B52500573BF1 /* RachioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RachioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B88D7641F54B52500573BF1 /* RachioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachioTests.swift; sourceTree = "<group>"; };
+		4B88D7661F54B52500573BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B88D76B1F54B52500573BF1 /* RachioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RachioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B88D76F1F54B52500573BF1 /* RachioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachioUITests.swift; sourceTree = "<group>"; };
+		4B88D7711F54B52500573BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B88D7491F54B52500573BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B88D75D1F54B52500573BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B88D7681F54B52500573BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B88D7431F54B52500573BF1 = {
+			isa = PBXGroup;
+			children = (
+				4B88D74E1F54B52500573BF1 /* Rachio */,
+				4B88D7631F54B52500573BF1 /* RachioTests */,
+				4B88D76E1F54B52500573BF1 /* RachioUITests */,
+				4B88D74D1F54B52500573BF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B88D74D1F54B52500573BF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B88D74C1F54B52500573BF1 /* Rachio.app */,
+				4B88D7601F54B52500573BF1 /* RachioTests.xctest */,
+				4B88D76B1F54B52500573BF1 /* RachioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B88D74E1F54B52500573BF1 /* Rachio */ = {
+			isa = PBXGroup;
+			children = (
+				4B88D74F1F54B52500573BF1 /* AppDelegate.swift */,
+				4B88D7511F54B52500573BF1 /* ViewController.swift */,
+				4B88D7531F54B52500573BF1 /* Main.storyboard */,
+				4B88D7561F54B52500573BF1 /* Assets.xcassets */,
+				4B88D7581F54B52500573BF1 /* LaunchScreen.storyboard */,
+				4B88D75B1F54B52500573BF1 /* Info.plist */,
+			);
+			path = Rachio;
+			sourceTree = "<group>";
+		};
+		4B88D7631F54B52500573BF1 /* RachioTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B88D7641F54B52500573BF1 /* RachioTests.swift */,
+				4B88D7661F54B52500573BF1 /* Info.plist */,
+			);
+			path = RachioTests;
+			sourceTree = "<group>";
+		};
+		4B88D76E1F54B52500573BF1 /* RachioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B88D76F1F54B52500573BF1 /* RachioUITests.swift */,
+				4B88D7711F54B52500573BF1 /* Info.plist */,
+			);
+			path = RachioUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B88D74B1F54B52500573BF1 /* Rachio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B88D7741F54B52500573BF1 /* Build configuration list for PBXNativeTarget "Rachio" */;
+			buildPhases = (
+				4B88D7481F54B52500573BF1 /* Sources */,
+				4B88D7491F54B52500573BF1 /* Frameworks */,
+				4B88D74A1F54B52500573BF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rachio;
+			productName = Rachio;
+			productReference = 4B88D74C1F54B52500573BF1 /* Rachio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B88D75F1F54B52500573BF1 /* RachioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B88D7771F54B52500573BF1 /* Build configuration list for PBXNativeTarget "RachioTests" */;
+			buildPhases = (
+				4B88D75C1F54B52500573BF1 /* Sources */,
+				4B88D75D1F54B52500573BF1 /* Frameworks */,
+				4B88D75E1F54B52500573BF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B88D7621F54B52500573BF1 /* PBXTargetDependency */,
+			);
+			name = RachioTests;
+			productName = RachioTests;
+			productReference = 4B88D7601F54B52500573BF1 /* RachioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B88D76A1F54B52500573BF1 /* RachioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B88D77A1F54B52500573BF1 /* Build configuration list for PBXNativeTarget "RachioUITests" */;
+			buildPhases = (
+				4B88D7671F54B52500573BF1 /* Sources */,
+				4B88D7681F54B52500573BF1 /* Frameworks */,
+				4B88D7691F54B52500573BF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B88D76D1F54B52500573BF1 /* PBXTargetDependency */,
+			);
+			name = RachioUITests;
+			productName = RachioUITests;
+			productReference = 4B88D76B1F54B52500573BF1 /* RachioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B88D7441F54B52500573BF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kaleb Riley";
+				TargetAttributes = {
+					4B88D74B1F54B52500573BF1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = BFKF2EE8PE;
+						ProvisioningStyle = Automatic;
+					};
+					4B88D75F1F54B52500573BF1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = BFKF2EE8PE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4B88D74B1F54B52500573BF1;
+					};
+					4B88D76A1F54B52500573BF1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = BFKF2EE8PE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4B88D74B1F54B52500573BF1;
+					};
+				};
+			};
+			buildConfigurationList = 4B88D7471F54B52500573BF1 /* Build configuration list for PBXProject "Rachio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B88D7431F54B52500573BF1;
+			productRefGroup = 4B88D74D1F54B52500573BF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B88D74B1F54B52500573BF1 /* Rachio */,
+				4B88D75F1F54B52500573BF1 /* RachioTests */,
+				4B88D76A1F54B52500573BF1 /* RachioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B88D74A1F54B52500573BF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B88D75A1F54B52500573BF1 /* LaunchScreen.storyboard in Resources */,
+				4B88D7571F54B52500573BF1 /* Assets.xcassets in Resources */,
+				4B88D7551F54B52500573BF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B88D75E1F54B52500573BF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B88D7691F54B52500573BF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B88D7481F54B52500573BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B88D7521F54B52500573BF1 /* ViewController.swift in Sources */,
+				4B88D7501F54B52500573BF1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B88D75C1F54B52500573BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B88D7651F54B52500573BF1 /* RachioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B88D7671F54B52500573BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B88D7701F54B52500573BF1 /* RachioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B88D7621F54B52500573BF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B88D74B1F54B52500573BF1 /* Rachio */;
+			targetProxy = 4B88D7611F54B52500573BF1 /* PBXContainerItemProxy */;
+		};
+		4B88D76D1F54B52500573BF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B88D74B1F54B52500573BF1 /* Rachio */;
+			targetProxy = 4B88D76C1F54B52500573BF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B88D7531F54B52500573BF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B88D7541F54B52500573BF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B88D7581F54B52500573BF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B88D7591F54B52500573BF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B88D7721F54B52500573BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B88D7731F54B52500573BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B88D7751F54B52500573BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BFKF2EE8PE;
+				INFOPLIST_FILE = Rachio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaleb.Rachio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4B88D7761F54B52500573BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BFKF2EE8PE;
+				INFOPLIST_FILE = Rachio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaleb.Rachio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4B88D7781F54B52500573BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BFKF2EE8PE;
+				INFOPLIST_FILE = RachioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaleb.RachioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rachio.app/Rachio";
+			};
+			name = Debug;
+		};
+		4B88D7791F54B52500573BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BFKF2EE8PE;
+				INFOPLIST_FILE = RachioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaleb.RachioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rachio.app/Rachio";
+			};
+			name = Release;
+		};
+		4B88D77B1F54B52500573BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BFKF2EE8PE;
+				INFOPLIST_FILE = RachioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaleb.RachioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Rachio;
+			};
+			name = Debug;
+		};
+		4B88D77C1F54B52500573BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BFKF2EE8PE;
+				INFOPLIST_FILE = RachioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaleb.RachioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Rachio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B88D7471F54B52500573BF1 /* Build configuration list for PBXProject "Rachio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B88D7721F54B52500573BF1 /* Debug */,
+				4B88D7731F54B52500573BF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B88D7741F54B52500573BF1 /* Build configuration list for PBXNativeTarget "Rachio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B88D7751F54B52500573BF1 /* Debug */,
+				4B88D7761F54B52500573BF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4B88D7771F54B52500573BF1 /* Build configuration list for PBXNativeTarget "RachioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B88D7781F54B52500573BF1 /* Debug */,
+				4B88D7791F54B52500573BF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4B88D77A1F54B52500573BF1 /* Build configuration list for PBXNativeTarget "RachioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B88D77B1F54B52500573BF1 /* Debug */,
+				4B88D77C1F54B52500573BF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B88D7441F54B52500573BF1 /* Project object */;
+}
