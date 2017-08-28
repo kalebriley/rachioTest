@@ -14,6 +14,9 @@
 		4B88D75A1F54B52500573BF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B88D7581F54B52500573BF1 /* LaunchScreen.storyboard */; };
 		4B88D7651F54B52500573BF1 /* RachioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B88D7641F54B52500573BF1 /* RachioTests.swift */; };
 		4B88D7701F54B52500573BF1 /* RachioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B88D76F1F54B52500573BF1 /* RachioUITests.swift */; };
+		4BB36C781F54B81F005B26C6 /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB36C771F54B81F005B26C6 /* NetworkingClient.swift */; };
+		4BB36C821F54BDD4005B26C6 /* Int+HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB36C811F54BDD4005B26C6 /* Int+HTTPStatusCode.swift */; };
+		4BB36C851F54BFB7005B26C6 /* ServerEnvironments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BB36C841F54BFB7005B26C6 /* ServerEnvironments.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		4B88D76B1F54B52500573BF1 /* RachioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RachioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B88D76F1F54B52500573BF1 /* RachioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachioUITests.swift; sourceTree = "<group>"; };
 		4B88D7711F54B52500573BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BB36C771F54B81F005B26C6 /* NetworkingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		4BB36C811F54BDD4005B26C6 /* Int+HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+HTTPStatusCode.swift"; sourceTree = "<group>"; };
+		4BB36C841F54BFB7005B26C6 /* ServerEnvironments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ServerEnvironments.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +83,6 @@
 		4B88D7431F54B52500573BF1 = {
 			isa = PBXGroup;
 			children = (
-				4BB36C761F54B747005B26C6 /* Networking */,
 				4B88D74E1F54B52500573BF1 /* Rachio */,
 				4B88D7631F54B52500573BF1 /* RachioTests */,
 				4B88D76E1F54B52500573BF1 /* RachioUITests */,
@@ -98,6 +103,7 @@
 		4B88D74E1F54B52500573BF1 /* Rachio */ = {
 			isa = PBXGroup;
 			children = (
+				4BB36C761F54B747005B26C6 /* Networking */,
 				4B88D77D1F54B53900573BF1 /* App */,
 			);
 			path = Rachio;
@@ -130,6 +136,7 @@
 				4B88D7561F54B52500573BF1 /* Assets.xcassets */,
 				4B88D7581F54B52500573BF1 /* LaunchScreen.storyboard */,
 				4B88D75B1F54B52500573BF1 /* Info.plist */,
+				4BB36C841F54BFB7005B26C6 /* ServerEnvironments.plist */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -137,8 +144,19 @@
 		4BB36C761F54B747005B26C6 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				4BB36C771F54B81F005B26C6 /* NetworkingClient.swift */,
+				4BB36C831F54BDF7005B26C6 /* Extension */,
 			);
 			name = Networking;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		4BB36C831F54BDF7005B26C6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4BB36C811F54BDD4005B26C6 /* Int+HTTPStatusCode.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B88D75A1F54B52500573BF1 /* LaunchScreen.storyboard in Resources */,
+				4BB36C851F54BFB7005B26C6 /* ServerEnvironments.plist in Resources */,
 				4B88D7571F54B52500573BF1 /* Assets.xcassets in Resources */,
 				4B88D7551F54B52500573BF1 /* Main.storyboard in Resources */,
 			);
@@ -278,8 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BB36C821F54BDD4005B26C6 /* Int+HTTPStatusCode.swift in Sources */,
 				4B88D7521F54B52500573BF1 /* ViewController.swift in Sources */,
 				4B88D7501F54B52500573BF1 /* AppDelegate.swift in Sources */,
+				4BB36C781F54B81F005B26C6 /* NetworkingClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
