@@ -18,6 +18,12 @@
 		4BB36C821F54BDD4005B26C6 /* Int+HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB36C811F54BDD4005B26C6 /* Int+HTTPStatusCode.swift */; };
 		4BB36C851F54BFB7005B26C6 /* ServerEnvironments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BB36C841F54BFB7005B26C6 /* ServerEnvironments.plist */; };
 		4BB36C871F54CFAD005B26C6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB36C861F54CFAD005B26C6 /* Coordinator.swift */; };
+		4BB36C891F54DC78005B26C6 /* WInterIzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB36C881F54DC78005B26C6 /* WInterIzeViewController.swift */; };
+		4BB36C8B1F54E5EF005B26C6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB36C8A1F54E5EF005B26C6 /* Person.swift */; };
+		4BB36C931F54EACB005B26C6 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB36C921F54EACB005B26C6 /* AuthenticationCoordinator.swift */; };
+		4BB36C981F54EE52005B26C6 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB36C971F54EE52005B26C6 /* Device.swift */; };
+		4BB36C9B1F54EE6D005B26C6 /* IrrigationZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB36C9A1F54EE6D005B26C6 /* IrrigationZone.swift */; };
+		4BB36CB61F54F5D6005B26C6 /* WinterizeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB36CB51F54F5D6005B26C6 /* WinterizeCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,12 @@
 		4BB36C811F54BDD4005B26C6 /* Int+HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+HTTPStatusCode.swift"; sourceTree = "<group>"; };
 		4BB36C841F54BFB7005B26C6 /* ServerEnvironments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ServerEnvironments.plist; sourceTree = "<group>"; };
 		4BB36C861F54CFAD005B26C6 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4BB36C881F54DC78005B26C6 /* WInterIzeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WInterIzeViewController.swift; sourceTree = "<group>"; };
+		4BB36C8A1F54E5EF005B26C6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = ../Person.swift; sourceTree = "<group>"; };
+		4BB36C921F54EACB005B26C6 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		4BB36C971F54EE52005B26C6 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		4BB36C9A1F54EE6D005B26C6 /* IrrigationZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IrrigationZone.swift; sourceTree = "<group>"; };
+		4BB36CB51F54F5D6005B26C6 /* WinterizeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinterizeCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +117,10 @@
 		4B88D74E1F54B52500573BF1 /* Rachio */ = {
 			isa = PBXGroup;
 			children = (
-				4BB36C761F54B747005B26C6 /* Networking */,
 				4B88D77D1F54B53900573BF1 /* App */,
+				4BB36C8E1F54E9DA005B26C6 /* Authentication */,
+				4BB36C761F54B747005B26C6 /* Networking */,
+				4BB36C8F1F54E9EB005B26C6 /* Winterize */,
 			);
 			path = Rachio;
 			sourceTree = "<group>";
@@ -132,12 +146,10 @@
 		4B88D77D1F54B53900573BF1 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				4B88D74F1F54B52500573BF1 /* AppDelegate.swift */,
-				4B88D7511F54B52500573BF1 /* ViewController.swift */,
-				4B88D7531F54B52500573BF1 /* Main.storyboard */,
+				4BB36C8D1F54E9CF005B26C6 /* AppDelegate */,
 				4B88D7561F54B52500573BF1 /* Assets.xcassets */,
-				4B88D7581F54B52500573BF1 /* LaunchScreen.storyboard */,
 				4B88D75B1F54B52500573BF1 /* Info.plist */,
+				4B88D7581F54B52500573BF1 /* LaunchScreen.storyboard */,
 				4BB36C841F54BFB7005B26C6 /* ServerEnvironments.plist */,
 			);
 			name = App;
@@ -160,6 +172,76 @@
 				4BB36C811F54BDD4005B26C6 /* Int+HTTPStatusCode.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		4BB36C8D1F54E9CF005B26C6 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4B88D74F1F54B52500573BF1 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4BB36C8E1F54E9DA005B26C6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4BB36C911F54EAB5005B26C6 /* Coordinator */,
+				4BB36C901F54EA7B005B26C6 /* View */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		4BB36C8F1F54E9EB005B26C6 /* Winterize */ = {
+			isa = PBXGroup;
+			children = (
+				4BB36C961F54EE2A005B26C6 /* Models */,
+				4BB36C951F54EE21005B26C6 /* Coordinator */,
+				4BB36C941F54EE1B005B26C6 /* View */,
+			);
+			name = Winterize;
+			sourceTree = "<group>";
+		};
+		4BB36C901F54EA7B005B26C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B88D7511F54B52500573BF1 /* ViewController.swift */,
+				4B88D7531F54B52500573BF1 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4BB36C911F54EAB5005B26C6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4BB36C921F54EACB005B26C6 /* AuthenticationCoordinator.swift */,
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		4BB36C941F54EE1B005B26C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BB36C881F54DC78005B26C6 /* WInterIzeViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4BB36C951F54EE21005B26C6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4BB36CB51F54F5D6005B26C6 /* WinterizeCoordinator.swift */,
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		4BB36C961F54EE2A005B26C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BB36C8A1F54E5EF005B26C6 /* Person.swift */,
+				4BB36C971F54EE52005B26C6 /* Device.swift */,
+				4BB36C9A1F54EE6D005B26C6 /* IrrigationZone.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,9 +383,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BB36C821F54BDD4005B26C6 /* Int+HTTPStatusCode.swift in Sources */,
+				4BB36C891F54DC78005B26C6 /* WInterIzeViewController.swift in Sources */,
+				4BB36CB61F54F5D6005B26C6 /* WinterizeCoordinator.swift in Sources */,
 				4B88D7521F54B52500573BF1 /* ViewController.swift in Sources */,
+				4BB36C981F54EE52005B26C6 /* Device.swift in Sources */,
 				4BB36C871F54CFAD005B26C6 /* Coordinator.swift in Sources */,
+				4BB36C8B1F54E5EF005B26C6 /* Person.swift in Sources */,
 				4B88D7501F54B52500573BF1 /* AppDelegate.swift in Sources */,
+				4BB36C9B1F54EE6D005B26C6 /* IrrigationZone.swift in Sources */,
+				4BB36C931F54EACB005B26C6 /* AuthenticationCoordinator.swift in Sources */,
 				4BB36C781F54B81F005B26C6 /* NetworkingClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

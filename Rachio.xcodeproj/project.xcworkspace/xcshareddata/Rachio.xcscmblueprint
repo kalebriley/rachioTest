@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "22BA71B0D646B7F22E306B09E138B6885BEEA02F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6D8BDBFF6203D72072FD4CBF632DCAE39B2F54F7" : 9223372036854775807,
+    "22BA71B0D646B7F22E306B09E138B6885BEEA02F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "40A4CD7F-788D-4056-8440-1625D01E68DC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6D8BDBFF6203D72072FD4CBF632DCAE39B2F54F7" : "Decodable\/",
+    "22BA71B0D646B7F22E306B09E138B6885BEEA02F" : "Rachio\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Rachio",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Rachio.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kalebriley\/rachioTest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "22BA71B0D646B7F22E306B09E138B6885BEEA02F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Anviking\/Decodable.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6D8BDBFF6203D72072FD4CBF632DCAE39B2F54F7"
+    }
+  ]
+}

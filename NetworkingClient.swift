@@ -23,9 +23,6 @@ public final class NetworkClient {
     // NOTE: this token should be set by authentication but is set manually here.
     private var bearerToken = "Bearer 599c4261-103d-4e9a-b5c4-06558c7fcbe9"
     
-    // NOTE: I'm setting the id.
-    private var currentUserId: String = "da0b7585-e3c2-42bc-887d-6e11dd209630"
-    
     // MARK: - Instance Properties
     internal let baseURL: URL
     internal let session = URLSession.shared

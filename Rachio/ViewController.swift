@@ -9,17 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    fileprivate var coordinator = AuthenticationCoordinator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        coordinator.view = self
+        userTappedLogin()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func userTappedLogin() {
+        showLoading()
+        coordinator.authenticate()
     }
+}
 
-
+extension ViewController: AuthenticationView {
+    func showAuthenticationSuccessful() {
+        hideLoading()
+        performSegue(withIdentifier: "showInfo", sender: nil)
+    }
+    
+    func showAuthenticationFailed(with message: String) {
+        hideLoading()
+        print(message)
+    }
 }
 
